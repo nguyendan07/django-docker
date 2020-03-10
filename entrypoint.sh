@@ -13,6 +13,7 @@ fi
 
 python manage.py flush --no-input
 python manage.py migrate --noinput
+RUN python manage.py collectstatic --noinput
 python manage loaddata dev_data.json
 
 exec "$@"
