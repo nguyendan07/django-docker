@@ -16,7 +16,7 @@ RUN pip install --upgrade pip
 # RUN pip install -r requirements.txt
 RUN pip install -U pip pipenv
 RUN pipenv install --system --deploy
-# RUN python manage.py collectstatic --noinput
+RUN python manage.py collectstatic --noinput
 
 EXPOSE 5000
 
