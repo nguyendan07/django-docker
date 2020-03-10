@@ -19,3 +19,6 @@ RUN pipenv install --system --deploy
 # RUN python manage.py collectstatic --noinput
 
 EXPOSE 5000
+
+# run entrypoint.sh
+ENTRYPOINT ["/djdocker/entrypoint.sh"]
